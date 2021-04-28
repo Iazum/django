@@ -1,0 +1,20 @@
+{% extends "logg/base.html" %}
+{% block content %}
+
+	<div>
+		<h2>This is our coorporations about page 
+			Below are our company's contact details
+		</h2>
+			<ul>
+				<li> Email: goplscoorp@gmail.com</li>
+				<li>Phone number: +2547454545</li>
+				<li>  <a href="https://www.facebook.com/gopscoorp/">Facebook</a></li>
+				<li> <a href="https://www.twitter.com/goplscoorp/">Twitter</a></li>
+			</ul>
+	</div>
+	<small>
+		<a href="{% url 'logout' %}">Logout</a>
+		<br>
+		<a href="{% url 'profile' %}">profile</a>
+	</small>
+{% endblock content %}

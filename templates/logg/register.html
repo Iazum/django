@@ -1,0 +1,14 @@
+{% extends "logg/base.html" %}
+{% block content %}
+	<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+
+		<button type="submit">Sign Up</button>
+	</form>
+	<small>
+		Already Have an account? <a href="#">Sign In</a>
+
+	</small>
+
+{% endblock content %}
